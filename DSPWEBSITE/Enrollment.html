@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Enrollment - Dominican School of Pilar, Inc.</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fdf8f6;
+      color: maroon;
+      margin: 0;
+      padding: 20px;
+    }
+
+    header {
+      background-color: maroon;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-family: 'Times New Roman', serif;
+      font-size: 28px;
+    }
+
+    .form-container {
+      max-width: 600px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      border: 2px solid maroon;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: maroon;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    .name-fields {
+      display: flex;
+      gap: 10px;
+    }
+
+    .name-fields input {
+      flex: 1;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      background-color: maroon;
+      color: white;
+      padding: 12px;
+      width: 100%;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #a00000;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+   
+<body>
+
+<header>
+  <h1>Dominican School of Pilar, Inc.</h1>
+</header>
+
+<div class="form-container">
+  <h2>Enrollment Form</h2>
+ <form action="https://formsubmit.co/derlajosep3@gmail.com" method="POST">
+  <!-- Hidden settings for Formsubmit -->
+  <input type="hidden" name="_next" value="https://yourgithubusername.github.io/thankyou.html">
+  <input type="hidden" name="_captcha" value="false">
+
+    
+    <div class="form-group">
+      <label>Full Name:</label>
+      <div class="name-fields">
+        <input type="text" name="lastName" placeholder="Last Name" required>
+        <input type="text" name="firstName" placeholder="First Name" required>
+        <input type="text" name="middleName" placeholder="Middle Name" required>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" required>
+    </div>
+
+    <div class="form-group">
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required>
+    </div>
+
+    <div class="form-group">
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">--Select Gender--</option>
+        <option value="Female">Female</option>
+        <option value="Male">Male</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="grade">Select Grade Level:</label>
+      <select id="grade" name="grade" required>
+        <option value="">--Select Grade Level--</option>
+
+        <optgroup label="Junior High School">
+          <option value="Grade 7">Grade 7</option>
+          <option value="Grade 8">Grade 8</option>
+          <option value="Grade 9">Grade 9</option>
+          <option value="Grade 10">Grade 10</option>
+        </optgroup>
+
+        <optgroup label="Senior High School (Strand)">
+          <option value="Grade 11 - STEM">Grade 11 - STEM</option>
+          <option value="Grade 11 - HUMSS">Grade 11 - HUMSS</option>
+          <option value="Grade 11 - ABM">Grade 11 - ABM</option>
+          <option value="Grade 11 - GAS">Grade 11 - GAS</option>
+          <option value="Grade 11 - TVL-CSS">Grade 11 - TVL (CSS)</option>
+          <option value="Grade 12 - STEM">Grade 12 - STEM</option>
+          <option value="Grade 12 - HUMSS">Grade 12 - HUMSS</option>
+          <option value="Grade 12 - ABM">Grade 12 - ABM</option>
+          <option value="Grade 12 - GAS">Grade 12 - GAS</option>
+          <option value="Grade 12 - TVL-CSS">Grade 12 - TVL (CSS)</option>
+        </optgroup>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="reason">Why do you want to enroll at Dominican School of Pilar?</label>
+      <textarea id="reason" name="reason" rows="4" placeholder="Write your reason here..." required></textarea>
+    </div>
+
+    <button type="submit">Submit Enrollment</button>
+  </form>
+</div>
+
+<footer>
+  &copy; 2025 Dominican School of Pilar, Inc. All rights reserved.
+</footer>
+<script>
+  const now = new Date();
+
+  // Set allowed access schedule
+  const startDate = new Date("2025-07-01T08:00:00");
+  const endDate = new Date("2025-08-15T17:00:00");
+
+  // Wait until page content is loaded
+  document.addEventListener("DOMContentLoaded", function () {
+    const formContainer = document.querySelector(".form-container");
+
+    if (now >= startDate && now <= endDate) {
+      // Within allowed schedule
+      console.log("Enrollment form is active.");
+    } else {
+      // Outside allowed schedule
+      formContainer.innerHTML = `
+        <div style="text-align:center; padding: 40px;">
+          <h2 style="color: maroon;">Enrollment is Currently Closed</h2>
+          <p>You may enroll between <strong>August 1</strong> and <strong>August 15, 2025</strong>, from <strong>8:00 AM</strong> to <strong>5:00 PM</strong> only.</p>
+        </div>
+      `;
+    }
+  });
+</script>
+
+</body>
+</html>

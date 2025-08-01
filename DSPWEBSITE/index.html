@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dominican School of Pilar, Inc.</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #4b0000;
+      background: #fff;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: maroon;
+      color: white;
+      padding: 20px;
+    }
+
+    header img {
+      height: 80px;
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      font-family: 'Times New Roman', serif;
+      font-size: 32px;
+      margin: 5px 0;
+    }
+
+    .contact-nav {
+      background-color: #800000;
+      color: white;
+      padding: 10px;
+    }
+
+    .contact-icons {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+    }
+
+    .contact-item i {
+      margin-right: 8px;
+      font-size: 24px;
+    }
+
+    .content {
+      background: url('background.jpg') no-repeat center center / cover;
+      min-height: 80vh;
+      padding-top: 40px;
+      padding-left: 10px;
+      padding-right: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .welcome-text {
+      font-size: 24px;
+      font-weight: bold;
+      color: maroon;
+    }
+
+    .italic {
+      font-style: italic;
+      font-weight: normal;
+    }
+
+    .bg-nav {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      font-family: 'Times New Roman', serif;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 20px 25px;
+      border: 2px solid maroon;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 1s ease forwards;
+      opacity: 0;
+      width: 100%;
+      max-width: 320px;
+    }
+
+    .bg-nav a {
+      color: maroon;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 20px;
+      border: 2px solid maroon;
+      border-radius: 20px;
+      background: white;
+      transition: 0.3s;
+    }
+
+    .bg-nav a:hover {
+      background-color: maroon;
+      color: white;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+    }
+
+    footer {
+      background-color: #800000;
+      color: white;
+      padding: 10px;
+      font-size: 14px;
+    }
+
+    /* Small improvements for mobile */
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 24px;
+      }
+
+      .welcome-text {
+        font-size: 20px;
+      }
+
+      .bg-nav {
+        max-width: 100%;
+        padding: 15px;
+      }
+
+      .bg-nav a {
+        padding: 10px;
+        font-size: 14px;
+      }
+
+      .contact-item {
+        font-size: 14px;
+      }
+
+      .contact-item i {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="New Logo.png" alt="School Logo" />
+  <h1>DOMINICAN SCHOOL OF PILAR, INC.</h1>
+  <p>Ludovice St. Brgy. Binanuahan Pilar, Sorsogon</p>
+</header>
+
+<div class="contact-nav">
+  <div>For more inquiries:</div>
+  <div class="contact-icons">
+    <div class="contact-item">
+      <i class="fab fa-facebook-square"></i> FB: Opesiena Pilar Dominicans
+    </div>
+    <div class="contact-item">
+      <i class="fas fa-phone"></i> CP: 09391892478
+    </div>
+    <div class="contact-item">
+      <i class="fas fa-envelope"></i> Gmail: dominicanpilar@gmail.com
+    </div>
+  </div>
+</div>
+
+<main class="content">
+  <div class="welcome-text">WELCOME!</div>
+  <div class="welcome-text italic">Blessed be God forever and Mabuhay!</div>
+
+  <nav class="bg-nav">
+    <a href="ABOUT.html">ABOUT</a>
+    <a href="NEWS.html">NEWS</a>
+    <a href="GALLERY.html">GALLERY</a>
+    <a href="ENROLLMENT.html">ENROLLMENT</a>
+  </nav>
+</main>
+
+<footer>
+  &copy; 2025 Dominican School of Pilar, Inc. All rights reserved.
+</footer>
+
+</body>
+</html>
+

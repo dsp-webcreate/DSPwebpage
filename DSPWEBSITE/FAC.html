@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>School Organizational Chart</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #800000;
+      margin: 0;
+      padding: 20px;
+      color: #fff;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 28px;
+    }
+
+    .chart {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+
+    .sub-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .person-box {
+      background-color: #fff;
+      color: #2c3e50;
+      border-radius: 12px;
+      padding: 15px;
+      width: 320px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s;
+    }
+
+    .person-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .person-box img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #800000;
+      margin-bottom: 10px;
+    }
+
+    .name {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .position {
+      font-size: 16px;
+      font-weight: bold;
+      color: #800000;
+    }
+
+    .details {
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    @media (max-width: 768px) {
+      .person-box {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>School Organizational Chart</h1>
+
+  <div class="chart">
+
+    <!-- School Head -->
+    <div class="group">
+      <div class="person-box">
+       <img src="PERSONNELS/p120.jpg" alt="IMAGE">
+        <div class="name">Sr. Enriqueta B. Arnaiz, OP</div>
+        <div class="position">School Head (Principal)</div>
+        <div class="details"><strong>Assignment:</strong> Administrative Head</div>
+               </div>
+      <div class="sub-group">
+        <div class="person-box">
+          <img src="PERSONNELS/p17.jpg" alt="IMAGE">
+          <div class="name">Sr. Adelina M. Navarrete,OP</div>
+          <div class="position">Local Superior</div>
+          <div class="details"><strong>Assignment:</strong> Food and Service In-Charge</div>
+               </div>
+        <div class="person-box">
+          <img src="https://via.placeholder.com/150" alt="IMAGE">
+          <div class="name">Sr. Shella Marfiel,OP</div>
+          <div class="position">School Registrar</div>
+          <div class="details"><strong>Assignment:</strong> Budget & Supplies</div>
+          <div class="details"><strong>Subject:</strong>CLVE</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Coordinators -->
+    <div class="group">
+      <div class="sub-group">
+        <div class="person-box">
+            <img src="PERSONNELS/p10.jpg" alt="IMAGE">
+          <div class="name">Ms. Ella G. Judin</div>
+          <div class="position">Academic Coordinator</div>
+          <div class="details"><strong>Assignment:</strong> Teachers Supervision and Academic Matters</div>
+          <div class="details"><strong>Subject:</strong> English</div>
+        </div>
+
+        <div class="person-box">
+          <img src="PERSONNELS/p125.jpg" alt="IMAGE">
+          <div class="name">Mr. John Paul M. Malto</div>
+          <div class="position">Activity Coordinator</div>
+          <div class="details"><strong>Assignment:</strong> Student Activities, SSC & DLC Moderator</div>
+          <div class="details"><strong>Subjects:</strong> Math</div>
+        </div>
+   
+       <div class="person-box">
+          <img src="PERSONNELS/p104.jpg" alt="IMAGE">
+          <div class="name">Mrs. Arienne A. Losabio</div>
+          <div class="position">School Registrar</div>
+          <div class="details"><strong>Assignment:</strong> Prefect of Student Formation</div>
+          <div class="details"><strong>Subjects:</strong> Fundamentals of Accounting, Business and Management, Applied Economics, Organization and Management</div>
+        </div>
+
+        <div class="person-box">
+          <img src="PERSONNELS/p103.jpg" alt="IMAGE">
+          <div class="name">Mr. Richmond Charles F. Buhisan</div>
+          <div class="position">Campus Ministry In-Charge</div>
+          <div class="details"><strong>Assignment:</strong> Liturgical Club Moderator</div>
+          <div class="details"><strong>Subjects:</strong> CLVE</div>
+        </div>
+
+    <!-- Teachers -->
+    <div class="group">
+      <div class="sub-group">
+        <div class="person-box">
+          <img src="PERSONNELS/p90.jpg" alt="IMAGE">
+          <div class="name">Ms. Lalaine B. Barola</div>
+          <div class="position">Teacher</div>
+          <div class="details"><strong>Assignment:</strong> Grade 7 - Charity Adviser, Guidance Staff, Research Club Moderator</div>
+          <div class="details"><strong>Subjects:</strong> English, Science, Personal Development</div>
+        </div>
+
+        <div class="person-box">
+          <img src="PERSONNELS/p40.jpg" alt="IMAGE">
+          <div class="name">Ms. Arlene C. Malanyaon</div>
+          <div class="position">Teacher</div>
+          <div class="details"><strong>Assignment:</strong> Grade 7-Faith Adviser, Argus Club Moderator</div>
+          <div class="details"><strong>Subjects:</strong> Filipino, Komunikasyon</div>
+        </div>
+
+        <div class="person-box">
+          <img src="PERSONNELS/p102.jpg" alt="IMAGE">
+          <div class="name">Ms. Lenel Anne B. Salvatierra</div>
+          <div class="position">Teacher</div>
+          <div class="details"><strong>Assignment:</strong> Grade 8-Temperance Adviser</div>
+          <div class="details"><strong>Subjects:</strong> English, AP, Oral Comm, EAPP</div>
+        </div>
+
+        <div class="person-box">
+          <img src="PERSONNELS/p100.jpg" alt="IMAGE">
+          <div class="name">Mr. Jonathan M. Marco</div>
+          <div class="position">Teacher</div>
+          <div class="details"><strong>Assignment:</strong> Grade 8-Courage Adviser, Sports & Performing Arts Moderator</div>
+          <div class="details"><strong>Subjects:</strong> MAPEH</div>
+        </div>
+
+        <div class="person-box">
+          <img src="PERSONNELS/p20.jpg" alt="IMAGE">
+          <div class="name">Ms. Cristine L. Monteveros</div>
+          <div class="position">Teacher</div>
+          <div class="details"><strong>Assignment:</strong> Grade 9-Perseverance Adviser, TLE/ICT Club Moderator, TLE Room In-Charge</div>
+          <div class="details"><strong>Subjects:</strong> TLE, AP,DRRR</div>
+        </div>
+
+        <div class="person-box">
+          <img src="PERSONNELS/P30.jpg" alt="IMAGE">
+          <div class="name">Ms. Aiza C. Encinas</div>
+          <div class="position">Teacher</div>
+          <div class="details"><strong>Assignment:</strong> Grade 10-Obedience Adviser, Sci-Math Club Moderator, Science Laboratory In-Charge</div>
+          <div class="details"><strong>Subjects:</strong> Science, General Biology, Earth and Life Science,Earth and Science</div>
+        </div>
+
+        <div class="person-box">
+          <img src="PERSONNELS/p60.jpg" alt="IMAGE">
+          <div class="name">Mr. Raffy C. Furio</div>
+          <div class="position">Teacher</div>
+          <div class="details"><strong>Assignment:</strong> Grade 11-Patience Adviser, Sci-Math Club Moderator</div>
+          <div class="details"><strong>Subjects:</strong> Math, Pre-Cal, General Physics</div>
+        </div>
+
+        <div class="person-box">
+          <img src="PERSONNELS/p50.jpg" alt="IMAGE">
+          <div class="name">Mr. Junard Salden N. Razo</div>
+          <div class="position">Teacher</div>
+          <div class="details"><strong>Assignment:</strong> Grade 12-Fortitude Adviser, Campus Ministry Assistant, Liturgical Club Moderator</div>
+          <div class="details"><strong>Subjects:</strong> AP,CL,UCSP,I2P</div>
+        </div>
+
+        <div class="person-box">
+          <img src="PERSONNELS/p70.jpg" alt="IMAGE">
+          <div class="name">Mr. Joseph E. Derla III</div>
+          <div class="position">Teacher</div>
+          <div class="details"><strong>Assignment:</strong> ICT Technician,School Electrician, TLE/ICT Club Moderator,Computer Laboratory In-Charge </div>
+          <div class="details"><strong>Subjects:</strong> ICT, E-TECH, MIL</div>
+        </div>
+        <div class="person-box">
+          <img src="PERSONNELS/p101.jpg" alt="IMAGE">
+          <div class="name">Ms.Jo-Anne M. Binaya</div>
+          <div class="position">Administrative Assistant</div>
+          <div class="details"><strong>Assignment:</strong> Sci-Math Club Moderator </div>
+          <div class="details"><strong>Subjects:</strong>Science</div>
+        </div>
+ </div>
+    <!-- Non-Teaching Staff -->
+   <div class="group">
+      <div class="sub-group">
+        <div class="person-box">
+          <img src="PERSONNELS/p105.jpg" alt="IMAGE">
+          <div class="name">Mrs. Lilibeth M. Pancho</div>
+          <div class="position">School Cashier</div>
+          <div class="details"><strong>Assignment:</strong> Finance & Fees Collection</div>
+        </div>
+    </div>
+
+    <!-- Library Associate -->
+    <div class="group">
+      <div class="sub-group">
+        <div class="person-box">
+          <img src="PERSONNELS/p106.jpg" alt="IMAGE">
+          <div class="name">Mrs. Maria Genalin P. Sioson</div>
+          <div class="position">Library Associate</div>
+          <div class="details"><strong>Assignment:</strong> Library and AVR In-Charge</div>
+         </div> 
+        </div>
+
+    <!-- School Maintenance -->
+    <div class="group">
+      <div class="sub-group">
+        <div class="person-box">
+          <img src="PERSONNELS/p108.jpg" alt="IMAGE">
+          <div class="name">Mr. Roy Lovendino</div>
+          <div class="position">School Maintenance</div>
+          <div class="details"><strong>Assignment:</strong> School Grounds & Facilities</div>
+          </div> 
+
+  </div>
+</body>
+</html>

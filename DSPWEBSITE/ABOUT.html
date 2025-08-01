@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>School Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Header */
+        .header {
+            background-color: maroon;
+            color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .header img {
+            height: 60px;
+            margin-right: 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        /* Main Content */
+        .content {
+            padding: 30px 20px;
+        }
+
+        /* Stylish Navigation Bar */
+        .nav-bar {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .nav-bar a {
+            text-decoration: none;
+            color: maroon;
+            font-weight: bold;
+            position: relative;
+            font-size: 24px; /* Bigger font */
+            padding: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-bar a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 4px;
+            bottom: 0;
+            left: 0;
+            background-color: maroon;
+            transition: width 0.3s;
+        }
+
+        .nav-bar a:hover {
+            color: #b22222;
+        }
+
+        .nav-bar a:hover::after {
+            width: 100%;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: maroon;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="New Logo.png" alt="School Logo">
+        <h1>Welcome to Our School</h1>
+    </div>
+
+    <div class="content">
+        <!-- Navigation Bar Only -->
+        <div class="nav-bar">
+            <a href="HISTORY.html">History</a>
+            <a href="	FAC.HTML">Fac/Staff</a>
+            <a href="PROGRAM.html">Programs</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2025 Your School Name. All rights reserved.
+    </div>
+
+</body>
+</html>
